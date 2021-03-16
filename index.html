@@ -112,3 +112,33 @@ function namosw_scrollstatus()
 
 
 <div class="betternet-wrapper"></div></body><whale-quicksearch translate="no"></whale-quicksearch></html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<title>***네티라인 스튜디오***</title>
+<base target="index_dn">
+<bgsound src="image/bgm1_wma.wma" loop="1">
+<script language="JavaScript">
+<!--
+function namosw_scrollstatus()
+{
+  var str = '';
+  if (namosw_scrollstatus.arguments.length > 0) {
+    var i;
+    for (str = '', i = 0; i < 100; i++)
+      str += ' ';
+    for (i = 0; i < namosw_scrollstatus.arguments.length; i++)
+      str += namosw_scrollstatus.arguments[i] + ' ';
+    document.namosw_scrollstatus = str;
+  } else {
+    var src_str = document.namosw_scrollstatus;
+    str  = src_str.substring(1, src_str.length);
+    str += src_str.substring(0, 1);
+    document.namosw_scrollstatus = str;
+  }
+  window.status = str;
+  setTimeout('namosw_scrollstatus()', 100);
+}
+
+// -->
+</script>
+<style></style></head>
